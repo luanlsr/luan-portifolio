@@ -23,7 +23,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier', 'react-hooks'],
+  plugins: ['react', 'prettier', '@typescript-eslint', 'react-hooks', 'jest'],
   settings: {
     react: {
       version: 'detect',
@@ -31,5 +31,8 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off',
+    quotes: ['error', 'single'],
+    indent: ['error', 2],
+    'no-multi-spaces': ['error'],
   },
 }
