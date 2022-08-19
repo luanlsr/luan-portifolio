@@ -1,0 +1,41 @@
+.header-container {
+  animation: ease-in 0.3s;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-container.active {
+  background-color: #111;
+  color: white;
+  height: 120px ;
+  opacity: 0.9;
+}
+
+.logoContainer {
+  display: flex;
+}
+
+.logoType {
+  position: relative;
+  animation: gira 8s linear infinite;
+}
+
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoName {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .logoName {
+    display: none;
+  }
+}

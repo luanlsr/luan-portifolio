@@ -1,0 +1,135 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(12, 11, 11);
+}
+
+.meeting {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  left: 25%;
+  position: absolute;
+  top: 250px;
+}
+
+.dynamic-text{
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.dynamic-text > li {
+  list-style: none;
+  font-size: 50px;
+  font-weight: 500px;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -440px;
+  }
+}
+
+.dynamic-text > li > h1 {
+  font-size: 5rem;
+  position: relative;
+  color: #7FFFD4;
+  /* animation: opac infinite ease-in-out 1.5s; */
+}
+
+
+.dynamic-text > li > h1::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #7FFFD4;
+  background: rgb(12, 11, 11);
+  animation: typing 3s steps(21) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+/* @keyframes opac {
+  50% {
+    opacity: 0;
+  }
+} */
+
+@media screen and (max-width: 1600px) {
+  .meeting p {
+    font-size: 1.8rem;
+  }
+
+  .dynamic-text{
+    height: 70px;
+    line-height: 70px;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -290px;
+    }
+  }
+
+  .dynamic-text > li > h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .meeting {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    left: 15%;
+    position: absolute;
+    /* top: 250px; */
+  }
+
+  .dynamic-text{
+    height: 60px;
+    line-height: 60px;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -270px;
+    }
+  }
+
+  .dynamic-text > li > h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .meeting p {
+    font-size: 1.2rem;
+  }
+
+  .dynamic-text{
+    height: 35px;
+    line-height: 35px;
+  }
+
+  @keyframes slide {
+    100% {
+      top: -160px;
+    }
+  }
+
+  .dynamic-text > li > h1 {
+    font-size: 1.6rem;
+  }
+}
