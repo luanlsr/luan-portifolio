@@ -5,7 +5,7 @@
 }
 
 .meeting {
-  color: white;
+  color: var(--light);
   font-size: 2.5rem;
   font-weight: 400;
   left: 25%;
@@ -36,7 +36,7 @@
 .dynamic-text > li > h1 {
   font-size: 70px;
   position: relative;
-  color: #7FFFD4;
+  color: var(--primary);
 }
 
 
@@ -46,9 +46,8 @@
   position: absolute;
   height: 110%;
   width: 100%;
-  border-left: 2px solid #7FFFD4;
-  background: rgb(12, 11, 11);
-  /* background-color: red; */
+  border-left: 2px solid var(--primary);
+  background: var(--name-effect);
   animation: typing 3s steps(21) infinite;
 }
 
@@ -58,12 +57,6 @@
     margin: 0 -35px 0 35px;
   }
 }
-
-/* @keyframes opac {
-  50% {
-    opacity: 0;
-  }
-} */
 
 @media screen and (max-width: 1600px) {
   .meeting p {
@@ -88,7 +81,7 @@
 
 @media screen and (max-width: 1200px) {
   .meeting {
-    color: white;
+    color: var(--light);
     font-size: 1.5rem;
     font-weight: 400;
     left: 15%;

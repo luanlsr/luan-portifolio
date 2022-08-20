@@ -1,12 +1,20 @@
 .about {
-  margin: 150px 0 0 60px;
   height: 100vh;
   padding: 150px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .about-text {
   text-align: justify;
-  width: 600px;
+  width: 800px;
+  margin-bottom: 20px;
 }
 
 .linkedin-btn {
@@ -14,5 +22,85 @@
   font-size: 1.4rem;
   color: #fff;
   height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.6 ease all;
+  margin-bottom: 20px;
   background-color: var(--primary);
+}
+
+.linkedin-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.photo-container {
+  background-color: var(--primary);
+  border-radius: 40%;
+}
+
+.photo {
+  border-radius: 50% 500px;
+}
+
+@media screen and (max-width: 1600px) {
+  .about h1 {
+    font-size: 30px;
+  }
+
+  .about-text {
+    width: 700px;
+  }
+
+  .photo {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about h1 {
+    font-size: 25px;
+  }
+
+  .about-text {
+    width: 800px;
+  }
+
+  .photo {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-text {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    margin: 0 90px 0 90px;
+  }
+
+  .about h1 {
+    font-size: 18px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    width: 360px;
+  }
+
+  .linkedin-btn {
+    width: 120px;
+    height: 40px;
+  }
+
+  .photo {
+    width: 200px;
+  }
 }

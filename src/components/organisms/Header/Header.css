@@ -19,6 +19,10 @@
   display: flex;
 }
 
+.logoContainer a {
+  display: flex;
+}
+
 .logoType {
   position: relative;
   animation: gira 8s linear infinite;

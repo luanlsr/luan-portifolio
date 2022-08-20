@@ -31,8 +31,10 @@ export const Header: React.FunctionComponent = () => {
       <div className={classes.header__content}>
         {/* <h2 className={classes.header__content__logo}>navbar</h2> */}
         <div className='logoContainer'>
-          <img className='logoName' src={logoName} alt='logoName' />
-          <img className='logoType' src={logoType} alt='logoType' />
+          <a href='#home'>
+            <img className='logoName' src={logoName} alt='logoName' />
+            <img className='logoType' src={logoType} alt='logoType' />
+          </a>
         </div>
         <nav className={classes.header__content__nav}>
           <ListMenu />
