@@ -23,7 +23,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'react-hooks', 'jest', 'plugin:prettier/recommended'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'jest', 'prettier'],
   settings: {
     react: {
       version: 'detect',
