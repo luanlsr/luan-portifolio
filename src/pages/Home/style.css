@@ -106,6 +106,10 @@
 }
 
 @media screen and (max-width: 760px) {
+  .meeting {
+    left: 10%;
+  }
+
   .meeting p {
     font-size: 1.2rem;
   }
