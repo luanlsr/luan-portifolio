@@ -1,0 +1,10 @@
+:root {
+  --black: #000;
+  --dark: #1d1d1d;
+  --light: #fff;
+  --primary: #7FFFD4;
+  --success: #28A745;
+  --danger: #DC3545;
+  --bg: rgb(244,244,255);
+  --name-effect: rgb(12, 11, 11);
+}
