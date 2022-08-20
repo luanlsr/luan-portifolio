@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 1000px) {
   .about {
-    margin: 0 90px 0 90px;
+    margin: 0 20px 0 20px;
   }
 
   .about h1 {
@@ -92,7 +92,7 @@
 
   .about-text {
     font-size: 14px;
-    width: 300px;
+    width: 260px;
   }
 
   .linkedin-btn {
