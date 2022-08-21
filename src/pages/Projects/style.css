@@ -1,12 +1,12 @@
 .projects {
   height: 100vh;
   padding: 150px 80px;
-  background-color: var(--dark);
+  background-color: var(--light);
 }
 
 .projects h1 {
   font-size: 40px;
-  color: white;
+  color: var(--dark);
 }
 
 @media screen and (max-width: 768px) {
