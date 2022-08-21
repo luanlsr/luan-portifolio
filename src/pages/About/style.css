@@ -44,10 +44,6 @@
 }
 
 @media screen and (max-width: 1600px) {
-  .about h1 {
-    font-size: 30px;
-  }
-
   .about-text {
     width: 700px;
   }
@@ -61,10 +57,6 @@
   .about {
     flex-direction: column;
     height: 130vh;
-  }
-
-  .about h1 {
-    font-size: 25px;
   }
 
   .about-text {
@@ -86,10 +78,6 @@
   .about {
     margin: 0 20px 0 20px;
     height: fit-content;
-  }
-
-  .about h1 {
-    font-size: 18px;
   }
 
   .about-text {

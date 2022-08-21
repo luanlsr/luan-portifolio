@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import classes from './Header.module.scss'
-import { FaBars } from 'react-icons/fa'
 import logoName from '../../assets/images/logoN.png'
 import logoType from '../../assets/images/logotype.png'
-import './Header.css'
+import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
+import classes from './Header.module.scss'
+import './Header.css'
 
 export const Header: React.FunctionComponent = () => {
   const [showHeader, setShowHeader] = useState(false)
