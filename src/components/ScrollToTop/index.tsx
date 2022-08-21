@@ -1,3 +1,4 @@
+import { AiOutlineArrowUp } from 'react-icons/ai'
 import './style.css'
 
 export const ScrollToTop = () => {
@@ -26,7 +27,9 @@ export const ScrollToTop = () => {
 
   return (
     <div id='progress' onClick={scrollToTopHandler}>
-      <span id='progress-value'>&#x1F815;</span>
+      <span id='progress-value'>
+        <AiOutlineArrowUp />
+      </span>
     </div>
   )
 }
