@@ -85,7 +85,7 @@
 @media screen and (max-width: 1000px) {
   .about {
     margin: 0 20px 0 20px;
-    height: 130vh;
+    height: fit-content;
   }
 
   .about h1 {
