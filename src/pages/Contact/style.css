@@ -1,0 +1,10 @@
+.contact {
+  height: 100vh;
+  padding: 150px 80px;
+  background-color: var(--bg);
+}
+
+.contact h1 {
+  font-size: 40px;
+  color: var(--dark);
+}

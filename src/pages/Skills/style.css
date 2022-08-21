@@ -1,0 +1,9 @@
+.skills {
+  height: fit-content;
+  padding: 150px 80px;
+  background-color: var(--bg-skills);
+}
+
+.skills h1 {
+  font-size: 40px;
+}

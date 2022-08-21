@@ -11,7 +11,7 @@
 .header-container.active {
   background-color: #111;
   color: white;
-  height: 120px ;
+  height: 90px ;
   opacity: 0.9;
 }
 
@@ -41,5 +41,11 @@
 @media screen and (max-width: 1200px) {
   .logoName {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768) {
+  .header-container.active {
+    height: 60px;
   }
 }

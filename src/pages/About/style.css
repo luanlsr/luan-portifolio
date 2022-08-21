@@ -27,11 +27,11 @@
   cursor: pointer;
   transition: 0.6 ease all;
   margin-bottom: 20px;
-  background-color: var(--primary);
+  background-color: var(--primary-hover);
 }
 
 .linkedin-btn:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--primary);
 }
 
 .photo-container {
@@ -60,6 +60,7 @@
 @media screen and (max-width: 1400px) {
   .about {
     flex-direction: column;
+    height: 130vh;
   }
 
   .about h1 {
@@ -84,6 +85,7 @@
 @media screen and (max-width: 1000px) {
   .about {
     margin: 0 20px 0 20px;
+    height: 130vh;
   }
 
   .about h1 {
