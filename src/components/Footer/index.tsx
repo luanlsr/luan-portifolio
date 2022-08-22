@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <section className='footer'>
       <div>
-        <span>{t('createdBy')} Luan da Silva Ramalho | </span>
+        <p>{t('createdBy')} Luan da Silva Ramalho</p>
         <BiCopyright />
         <span> 2022 {t('rights')}.</span>
       </div>

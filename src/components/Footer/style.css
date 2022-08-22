@@ -5,10 +5,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .footer span {
+    font-size: 10px;
+  }
+
+  .footer p {
     font-size: 10px;
   }
 }
