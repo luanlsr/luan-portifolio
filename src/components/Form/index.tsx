@@ -1,14 +1,17 @@
 import { useState, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import emailjs from '@emailjs/browser'
 import './style.css'
 
 const Result = () => {
-  return <p>Your message was sent! Thank you for the contact.</p>
+  const { t } = useTranslation()
+  return <p>{t('sentMessage')}</p>
 }
 
 export const Forms = () => {
   const [sentEmail, setSendEmail] = useState(false)
   const form = useRef<HTMLFormElement>(null)
+  const { t } = useTranslation()
 
   function handleSubmit(e: any) {
     e.preventDefault()
@@ -32,24 +35,24 @@ export const Forms = () => {
   return (
     <section className='form-container'>
       <form ref={form} onSubmit={handleSubmit} className='form'>
-        <h3>Write me a Message 👇</h3>
+        <h3>{t('writeMe')}</h3>
         <div className='container'>
-          <label htmlFor='name'>Your Name</label>
+          <label htmlFor='name'>{t('yourName')}</label>
           <input required name='user_name' type='text' id='name' />
         </div>
         <div className='container'>
-          <label htmlFor='email'>Your E-mail</label>
+          <label htmlFor='email'>{t('yourEmail')}</label>
           <input required name='user_email' type='email' id='email' />
         </div>
         <div className='container'>
-          <label htmlFor='subject'>Subject</label>
+          <label htmlFor='subject'>{t('yourSubject')}</label>
           <input required name='user_subject' type='text' id='subject' />
         </div>
         <div className='container'>
-          <label htmlFor='message'>Message</label>
+          <label htmlFor='message'>{t('message')}</label>
           <textarea required name='message' id='message' />
         </div>
-        <button className='btn-submit'>Send</button>
+        <button className='btn-submit'>{t('send')}</button>
       </form>
       {sentEmail ? <Result /> : null}
     </section>

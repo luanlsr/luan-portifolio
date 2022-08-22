@@ -1,13 +1,15 @@
-import './style.css'
+import { useTranslation } from 'react-i18next'
 import { BiCopyright } from 'react-icons/bi'
+import './style.css'
 
 export const Footer = () => {
+  const { t } = useTranslation()
   return (
     <section className='footer'>
       <div>
-        <span>Created By Luan da Silva Ramalho | </span>
+        <span>{t('createdBy')} Luan da Silva Ramalho | </span>
         <BiCopyright />
-        <span> 2022 All rights Reserved.</span>
+        <span> 2022 {t('rights')}.</span>
       </div>
     </section>
   )

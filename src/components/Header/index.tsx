@@ -1,18 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import logoName from '../../assets/images/logoN.png'
 import logoType from '../../assets/images/logotype.png'
+import { useTranslation } from 'react-i18next'
 import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
+import ReactCountryFlag from 'react-country-flag'
 import classes from './Header.module.scss'
 import './Header.css'
 
-export const Header: React.FunctionComponent = () => {
+export const Header = (): JSX.Element => {
   const [showHeader, setShowHeader] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [ukFlag, setUkFlag] = useState(true)
+  const [brFlag, setBrFlag] = useState(false)
   const [size, setSize] = useState({
     width: 0,
     height: 0,
   })
+
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,6 +46,19 @@ export const Header: React.FunctionComponent = () => {
     }
   }
 
+  const handleTranslate = ({ target }: any) => {
+    if (target.classList.contains('grayFlag') && target.classList.contains('ukFlag')) {
+      setUkFlag(false)
+      setBrFlag(true)
+      i18n.changeLanguage('en')
+    }
+    if (target.classList.contains('grayFlag') && target.classList.contains('brFlag')) {
+      setBrFlag(false)
+      setUkFlag(true)
+      i18n.changeLanguage('ptBR')
+    }
+  }
+
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p)
   }
@@ -55,7 +74,6 @@ export const Header: React.FunctionComponent = () => {
       }
     >
       <div className={classes.header__content}>
-        {/* <h2 className={classes.header__content__logo}>navbar</h2> */}
         <div className='logoContainer'>
           <a href='#home'>
             <img className='logoName' src={logoName} alt='logoName' />
@@ -66,28 +84,52 @@ export const Header: React.FunctionComponent = () => {
           <ul>
             <li>
               <a onClick={() => setMenuOpen(false)} href='#home'>
-                Home
+                {t('home')}
               </a>
             </li>
             <li>
               <a onClick={() => setMenuOpen(false)} href='#about'>
-                About
+                {t('about')}
               </a>
             </li>
             <li>
               <a onClick={() => setMenuOpen(false)} href='#skills'>
-                Skills
+                {t('skills')}
               </a>
             </li>
             <li>
               <a onClick={() => setMenuOpen(false)} href='#projects'>
-                Projects
+                {t('projects')}
               </a>
             </li>
             <li>
               <a onClick={() => setMenuOpen(false)} href='#contact'>
-                Contact
+                {t('contact')}
               </a>
+            </li>
+            <li className='flags'>
+              <ReactCountryFlag
+                onClick={handleTranslate}
+                className={`flag brFlag ${brFlag ? 'grayFlag' : ''}`}
+                countryCode='BR'
+                svg
+                style={{
+                  fontSize: '2em',
+                  lineHeight: '2em',
+                }}
+                aria-label='Brazil'
+              />
+              <ReactCountryFlag
+                onClick={handleTranslate}
+                className={`flag ukFlag ${ukFlag ? 'grayFlag' : ''}`}
+                countryCode='GB'
+                svg
+                style={{
+                  fontSize: '2em',
+                  lineHeight: '2em',
+                }}
+                aria-label='GB'
+              />
             </li>
           </ul>
         </nav>

@@ -69,12 +69,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .about-text {
-    width: 600px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
   .about {
     margin: 0 20px 0 20px;
     height: fit-content;
@@ -82,7 +76,7 @@
 
   .about-text {
     font-size: 14px;
-    width: 260px;
+    width: 600px;
   }
 
   .linkedin-btn {
@@ -92,5 +86,17 @@
 
   .photo {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-text {
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .about-text {
+    width: 300px;
   }
 }

@@ -28,6 +28,30 @@
   animation: gira 8s linear infinite;
 }
 
+.flags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flag {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.grayFlag {
+  filter: grayscale(1);
+}
+
+.brFlag {
+
+}
+
+.usFlag {
+  cursor: pointer;
+}
+
+
 @keyframes gira {
   to {
     transform: rotate(360deg);
