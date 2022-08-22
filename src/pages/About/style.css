@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .about h1 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -17,21 +23,19 @@
   margin-bottom: 20px;
 }
 
-.linkedin-btn {
-  width: 150px;
-  font-size: 1.4rem;
-  color: #fff;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.6 ease all;
-  margin-bottom: 20px;
-  background-color: var(--primary-hover);
+.networks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.linkedin-btn:hover {
-  background-color: var(--primary);
+.networks-btn {
+  width: 50px;
+  margin: 0 0 20px 20px;
+}
+
+.networks-btn:hover {
+  filter: brightness(0.8);
 }
 
 .photo-container {
@@ -56,6 +60,7 @@
 @media screen and (max-width: 1400px) {
   .about {
     flex-direction: column;
+    align-items: center;
     height: 130vh;
   }
 
