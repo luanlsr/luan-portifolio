@@ -26,7 +26,7 @@ export const Projects = () => {
   }
 
   return (
-    <section className='projects' id='projects'>
+    <section className="projects" id="projects">
       <div>
         <h1>{t('projects')}</h1>
         <Swiper
@@ -38,7 +38,7 @@ export const Projects = () => {
             clickable: true,
           }}
           modules={[Pagination, Autoplay]}
-          className='mySwiper'
+          className="mySwiper"
         >
           {projects.map((project: any, i: any) => (
             <SwiperSlide key={i}>
