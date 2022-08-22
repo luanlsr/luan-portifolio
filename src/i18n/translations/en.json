@@ -18,6 +18,7 @@
     "send": "Send",
     "sendMessage": "Your message was sent! Thank you for the contact.",
     "createdBy": "Created By",
-    "rights": "All rights Reserved"
+    "rights": "All rights Reserved",
+    "access": "Access"
   }
 }
