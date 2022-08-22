@@ -6,7 +6,9 @@ export const ScrollToTop = () => {
     const scrollProgress = document.getElementById('progress')
     const pos = document.documentElement.scrollTop
 
-    const calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const calcHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight
 
     const scrollValue = Math.round((pos * 100) / calcHeight)
 
@@ -26,8 +28,8 @@ export const ScrollToTop = () => {
   window.onload = calcScrollValue
 
   return (
-    <div id='progress' onClick={scrollToTopHandler}>
-      <span id='progress-value'>
+    <div id="progress" onClick={scrollToTopHandler}>
+      <span id="progress-value">
         <AiOutlineArrowUp />
       </span>
     </div>

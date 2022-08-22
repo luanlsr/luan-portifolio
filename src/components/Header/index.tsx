@@ -47,12 +47,18 @@ export const Header = (): JSX.Element => {
   }
 
   const handleTranslate = ({ target }: any) => {
-    if (target.classList.contains('grayFlag') && target.classList.contains('ukFlag')) {
+    if (
+      target.classList.contains('grayFlag') &&
+      target.classList.contains('ukFlag')
+    ) {
       setUkFlag(false)
       setBrFlag(true)
       i18n.changeLanguage('en')
     }
-    if (target.classList.contains('grayFlag') && target.classList.contains('brFlag')) {
+    if (
+      target.classList.contains('grayFlag') &&
+      target.classList.contains('brFlag')
+    ) {
       setBrFlag(false)
       setUkFlag(true)
       i18n.changeLanguage('ptBR')
@@ -60,7 +66,7 @@ export const Header = (): JSX.Element => {
   }
 
   const menuToggleHandler = () => {
-    setMenuOpen((p) => !p)
+    setMenuOpen(p => !p)
   }
 
   window.addEventListener('scroll', changeBackground)
@@ -74,61 +80,65 @@ export const Header = (): JSX.Element => {
       }
     >
       <div className={classes.header__content}>
-        <div className='logoContainer'>
-          <a href='#home'>
-            <img className='logoName' src={logoName} alt='logoName' />
-            <img className='logoType' src={logoType} alt='logoType' />
+        <div className="logoContainer">
+          <a href="#home">
+            <img className="logoName" src={logoName} alt="logoName" />
+            <img className="logoType" src={logoType} alt="logoType" />
           </a>
         </div>
-        <nav className={`${classes.header__content__nav} ${menuOpen ? classes.isMenu : ''}`}>
+        <nav
+          className={`${classes.header__content__nav} ${
+            menuOpen ? classes.isMenu : ''
+          }`}
+        >
           <ul>
             <li>
-              <a onClick={() => setMenuOpen(false)} href='#home'>
+              <a onClick={() => setMenuOpen(false)} href="#home">
                 {t('home')}
               </a>
             </li>
             <li>
-              <a onClick={() => setMenuOpen(false)} href='#about'>
+              <a onClick={() => setMenuOpen(false)} href="#about">
                 {t('about')}
               </a>
             </li>
             <li>
-              <a onClick={() => setMenuOpen(false)} href='#skills'>
+              <a onClick={() => setMenuOpen(false)} href="#skills">
                 {t('skills')}
               </a>
             </li>
             <li>
-              <a onClick={() => setMenuOpen(false)} href='#projects'>
+              <a onClick={() => setMenuOpen(false)} href="#projects">
                 {t('projects')}
               </a>
             </li>
             <li>
-              <a onClick={() => setMenuOpen(false)} href='#contact'>
+              <a onClick={() => setMenuOpen(false)} href="#contact">
                 {t('contact')}
               </a>
             </li>
-            <li className='flags'>
+            <li className="flags">
               <ReactCountryFlag
                 onClick={handleTranslate}
                 className={`flag brFlag ${brFlag ? 'grayFlag' : ''}`}
-                countryCode='BR'
+                countryCode="BR"
                 svg
                 style={{
                   fontSize: '2em',
                   lineHeight: '2em',
                 }}
-                aria-label='Brazil'
+                aria-label="Brazil"
               />
               <ReactCountryFlag
                 onClick={handleTranslate}
                 className={`flag ukFlag ${ukFlag ? 'grayFlag' : ''}`}
-                countryCode='GB'
+                countryCode="GB"
                 svg
                 style={{
                   fontSize: '2em',
                   lineHeight: '2em',
                 }}
-                aria-label='GB'
+                aria-label="GB"
               />
             </li>
           </ul>

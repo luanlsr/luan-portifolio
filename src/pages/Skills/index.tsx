@@ -5,7 +5,7 @@ import './style.css'
 export const Skills = () => {
   const { t } = useTranslation()
   return (
-    <section className='skills' id='skills'>
+    <section className="skills" id="skills">
       <div>
         <h1>{t('skills')}</h1>
         <article>

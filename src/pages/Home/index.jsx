@@ -5,10 +5,10 @@ export const Home = () => {
   const { t } = useTranslation()
 
   return (
-    <section className='home' id='home'>
-      <div className='meeting'>
+    <section className="home" id="home">
+      <div className="meeting">
         <p>{t('iAm')}</p>
-        <ul className='dynamic-text'>
+        <ul className="dynamic-text">
           <li>
             <h1>Luan da Silva Ramalho</h1>
           </li>
