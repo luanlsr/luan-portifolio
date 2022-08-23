@@ -6,7 +6,7 @@ export const Cards = () => {
   return (
     <div className="card-container">
       {amountCards.map((_, i) => (
-        <div className="cards" key={i}>
+        <div className="cardss" key={i}>
           <a href={logos[i].link} target="__blank">
             <img
               key={i}
