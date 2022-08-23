@@ -1,6 +1,7 @@
 .skills {
   height: fit-content;
   padding: 150px 80px;
+  background-color: red;
   background-color: var(--bg-skills);
 }
 

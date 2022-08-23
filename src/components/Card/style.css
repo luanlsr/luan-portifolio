@@ -16,3 +16,14 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+
+@media screen and (max-width: 768px) {
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card span {
+    font-size: 14px;
+  }
+}

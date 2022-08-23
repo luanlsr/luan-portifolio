@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/luan-portifolio/static/css/main.1b7b0a9f.css",
-    "main.js": "/luan-portifolio/static/js/main.5c328460.js",
+    "main.css": "/luan-portifolio/static/css/main.5b935f42.css",
+    "main.js": "/luan-portifolio/static/js/main.dd5a94b6.js",
     "static/media/mercadolivre.png": "/luan-portifolio/static/media/mercadolivre.8be20c349f64ae4fd26c.png",
     "static/media/Figma-logo.svg.png": "/luan-portifolio/static/media/Figma-logo.svg.d3eb27dfcd1e8ad49dd3.png",
     "static/media/todolist.png": "/luan-portifolio/static/media/todolist.0268b60bd0c3f1e60c4e.png",
@@ -35,11 +35,11 @@
     "static/media/logoN.png": "/luan-portifolio/static/media/logoN.d50781f2e485981cb4f1.png",
     "static/media/bootstrap-logo.svg": "/luan-portifolio/static/media/bootstrap-logo.d180fe4cd44732fd70b35f650a76b99c.svg",
     "index.html": "/luan-portifolio/index.html",
-    "main.1b7b0a9f.css.map": "/luan-portifolio/static/css/main.1b7b0a9f.css.map",
-    "main.5c328460.js.map": "/luan-portifolio/static/js/main.5c328460.js.map"
+    "main.5b935f42.css.map": "/luan-portifolio/static/css/main.5b935f42.css.map",
+    "main.dd5a94b6.js.map": "/luan-portifolio/static/js/main.dd5a94b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b7b0a9f.css",
-    "static/js/main.5c328460.js"
+    "static/css/main.5b935f42.css",
+    "static/js/main.dd5a94b6.js"
   ]
 }

@@ -37,6 +37,12 @@
     padding: 150px 60px;
   }
 
+  .swiper {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+  }
+
   .swiper-slide img {
     height: 200px;
   }
