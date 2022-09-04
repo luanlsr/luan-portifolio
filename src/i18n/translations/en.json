@@ -13,7 +13,7 @@
     "writeMe": "Write me a Message 👇",
     "name": "Your Name",
     "email": "Your Email",
-    "yourSubject": "Your Subject",
+    "subject": "Your Subject",
     "message": "Message",
     "send": "Send",
     "sendMessage": "Your message was sent! Thank you for the contact.",

@@ -42,15 +42,15 @@ export const Forms = () => {
       <form ref={form} onSubmit={handleSubmit} className="form">
         <h3>{t('writeMe')}</h3>
         <div className="container">
-          <label htmlFor="name">{t('yourName')}</label>
+          <label htmlFor="name">{t('name')}</label>
           <input required name="user_name" type="text" id="name" />
         </div>
         <div className="container">
-          <label htmlFor="email">{t('yourEmail')}</label>
+          <label htmlFor="email">{t('email')}</label>
           <input required name="user_email" type="email" id="email" />
         </div>
         <div className="container">
-          <label htmlFor="subject">{t('yourSubject')}</label>
+          <label htmlFor="subject">{t('subject')}</label>
           <input required name="user_subject" type="text" id="subject" />
         </div>
         <div className="container">
