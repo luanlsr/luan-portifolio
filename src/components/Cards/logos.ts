@@ -23,6 +23,7 @@ import MOCHACHAI from '../../assets/images/logos/mocha-chai.png'
 import JEST from '../../assets/images/logos/jest.png'
 import PYTEST from '../../assets/images/logos/Pytest_logo.png'
 import FIREBASE from '../../assets/images/logos/firebase.png'
+import RABBITMQ from '../../assets/images/logos/rabbitmq.png'
 import POSTGRESQL from '../../assets/images/logos/postgresql-logo.png'
 import MARIADB from '../../assets/images/logos/MariaDB_Logo.png'
 import SASS from '../../assets/images/logos/Sass.png'
@@ -122,11 +123,6 @@ export const logos = [
     link: 'https://www.java.com/pt-BR/',
   },
   {
-    name: 'JUnit',
-    logo: JUNIT,
-    link: 'https://junit.org/junit5/',
-  },
-  {
     name: 'Python',
     logo: PYTHON,
     link: 'https://www.python.org/',
@@ -160,6 +156,11 @@ export const logos = [
     name: 'Firebase',
     logo: FIREBASE,
     link: 'https://firebase.google.com/?hl=pt',
+  },
+  {
+    name: 'RabbitMQ',
+    logo: RABBITMQ,
+    link: 'https://www.rabbitmq.com/',
   },
   {
     name: 'MySQL',
