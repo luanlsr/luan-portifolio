@@ -10,17 +10,14 @@ import BOOTSTRAP from '../../assets/images/logos/bootstrap-logo.svg'
 import GIT from '../../assets/images/logos/git.png'
 import GITHUB from '../../assets/images/logos/GitHub-Logo.png'
 import MYSQL from '../../assets/images/logos/MySQL-logo.png'
+import SQLSERVER from '../../assets/images/logos/sql-server.png'
 import MONGODB from '../../assets/images/logos/MongoDB_Logo.png'
 import REACT from '../../assets/images/logos/react.png'
 import REDUX from '../../assets/images/logos/Redux.png'
 import VUE from '../../assets/images/logos/vuejs.png'
 import ANGULAR from '../../assets/images/logos/angular.png'
-import SPRING from '../../assets/images/logos/spring-logo.png'
-import SPRING_BOOT from '../../assets/images/logos/spring-boot.png'
 import DOCKER from '../../assets/images/logos/docker.webp'
 import NODE from '../../assets/images/logos/nodejs-logo.png'
-import KOTLIN from '../../assets/images/logos/Kotlin_logo.png'
-import JUNIT from '../../assets/images/logos/junit5.png'
 import NUNIT from '../../assets/images/logos/Nunit_logo.png'
 import MOCHACHAI from '../../assets/images/logos/mocha-chai.png'
 import JEST from '../../assets/images/logos/jest.png'
@@ -125,21 +122,6 @@ export const logos = [
     link: 'https://www.java.com/pt-BR/',
   },
   {
-    name: 'Spring',
-    logo: SPRING,
-    link: 'https://spring.io/',
-  },
-  {
-    name: 'Spring Boot',
-    logo: SPRING_BOOT,
-    link: 'https://spring.io/projects/spring-boot',
-  },
-  {
-    name: 'Kotlin',
-    logo: KOTLIN,
-    link: 'https://kotlinlang.org/',
-  },
-  {
     name: 'JUnit',
     logo: JUNIT,
     link: 'https://junit.org/junit5/',
@@ -183,6 +165,11 @@ export const logos = [
     name: 'MySQL',
     logo: MYSQL,
     link: 'https://www.mysql.com/',
+  },
+  {
+    name: 'SQL Server',
+    logo: SQLSERVER,
+    link: 'https://www.microsoft.com/pt-br/sql-server',
   },
   {
     name: 'Postgresql',

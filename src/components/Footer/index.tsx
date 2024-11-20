@@ -9,7 +9,7 @@ export const Footer = () => {
       <div>
         <p>{t('createdBy')} Luan da Silva Ramalho</p>
         <BiCopyright />
-        <span> 2022 {t('rights')}.</span>
+        <span> 2024 {t('rights')}.</span>
       </div>
     </section>
   )
