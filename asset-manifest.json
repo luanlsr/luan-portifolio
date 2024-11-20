@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/luan-portifolio/static/css/main.684a195e.css",
-    "main.js": "/luan-portifolio/static/js/main.10839418.js",
+    "main.css": "/luan-portifolio/static/css/main.e241a308.css",
+    "main.js": "/luan-portifolio/static/js/main.e6b7cc6c.js",
     "static/media/mercadolivre.png": "/luan-portifolio/static/media/mercadolivre.8be20c349f64ae4fd26c.png",
     "static/media/Figma-logo.svg.png": "/luan-portifolio/static/media/Figma-logo.svg.d3eb27dfcd1e8ad49dd3.png",
     "static/media/todolist.png": "/luan-portifolio/static/media/todolist.0268b60bd0c3f1e60c4e.png",
@@ -19,10 +19,9 @@
     "static/media/MySQL-logo.png": "/luan-portifolio/static/media/MySQL-logo.797695928715bb491f11.png",
     "static/media/nodejs-logo.png": "/luan-portifolio/static/media/nodejs-logo.46f93a59e85ca1971c66.png",
     "static/media/vuejs.png": "/luan-portifolio/static/media/vuejs.b3eb5e3c484454b1de5c.png",
+    "static/media/sql-server.png": "/luan-portifolio/static/media/sql-server.f88c675b8fdacd876e88.png",
     "static/media/Typescript_logo.png": "/luan-portifolio/static/media/Typescript_logo.c4105801aadf2606ac30.png",
-    "static/media/spring-boot.png": "/luan-portifolio/static/media/spring-boot.94f201ce44348763e6a5.png",
     "static/media/mocha-chai.png": "/luan-portifolio/static/media/mocha-chai.27ae4385c59aca1361b9.png",
-    "static/media/Kotlin_logo.png": "/luan-portifolio/static/media/Kotlin_logo.24213dcc19c20f3ee494.png",
     "static/media/jest.png": "/luan-portifolio/static/media/jest.809768de8350fa5f6a21.png",
     "static/media/javalogo.png": "/luan-portifolio/static/media/javalogo.b9a6696fd4799d7cb4c6.png",
     "static/media/MongoDB_Logo.png": "/luan-portifolio/static/media/MongoDB_Logo.b4812958606047af927d.png",
@@ -31,15 +30,14 @@
     "static/media/docker.webp": "/luan-portifolio/static/media/docker.b6f6810eb0a1ac91daab.webp",
     "static/media/dotnet.png": "/luan-portifolio/static/media/dotnet.3de613727174cf312655.png",
     "static/media/Expressjs.svg": "/luan-portifolio/static/media/Expressjs.778883a8c616cdae1ae2eded6c460ee0.svg",
-    "static/media/junit5.png": "/luan-portifolio/static/media/junit5.909a543a888e222e9220.png",
     "static/media/logoN.png": "/luan-portifolio/static/media/logoN.d50781f2e485981cb4f1.png",
     "static/media/bootstrap-logo.svg": "/luan-portifolio/static/media/bootstrap-logo.2abd2d693e882a949b76df3ebda92f74.svg",
     "index.html": "/luan-portifolio/index.html",
-    "main.684a195e.css.map": "/luan-portifolio/static/css/main.684a195e.css.map",
-    "main.10839418.js.map": "/luan-portifolio/static/js/main.10839418.js.map"
+    "main.e241a308.css.map": "/luan-portifolio/static/css/main.e241a308.css.map",
+    "main.e6b7cc6c.js.map": "/luan-portifolio/static/js/main.e6b7cc6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.684a195e.css",
-    "static/js/main.10839418.js"
+    "static/css/main.e241a308.css",
+    "static/js/main.e6b7cc6c.js"
   ]
 }
